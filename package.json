@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "My portfolio website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Robbie Bardijn <robbie.bardijn.works@gmail.com> -- CodeTail",
   "dependencies": {
     "gatsby": "^2.17.4",
     "gatsby-image": "^2.2.29",
@@ -22,9 +22,12 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "html",
+    "js",
+    "css"
   ],
-  "license": "MIT",
+  "license": "UNLICENSED",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -35,9 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "git+https://github.com/rob-bar/portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+    "url": "https://github.com/rob-bar/portfolio/issues"
+  },
+  "homepage": "http://robbiebardijn.be"
 }
