@@ -10,14 +10,30 @@ const FixedBackground = styled.div`
   position: fixed;
   width: 100%;
   height: 100%;
-  background: url('/images/pat.png'), linear-gradient(#293742, #192026);
+  background: url("/images/pat.png"), linear-gradient(#293742, #192026);
 `
 const MainStyled = styled.main`
   z-index: 5;
   position: relative;
   top: 3.4365rem;
-  margin: 1rem;
-  transition: width 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 0ms;
+  margin: 1rem auto;
+  transition: width 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+  @media screen and (min-width: 640px) {
+    width: 640px;
+  }
+  @media screen and (min-width: 960px) {
+    width: 960px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
 `
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,9 +50,7 @@ const Layout = ({ children }) => {
     <>
       <FixedBackground />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <MainStyled>
-        {children}
-      </MainStyled>
+      <MainStyled>{children}</MainStyled>
     </>
   )
 }

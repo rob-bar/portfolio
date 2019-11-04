@@ -49,7 +49,7 @@ projects:
       - 522081b47c780f78e5ce4a12
       - Game
     media :
-        thumb : own-tetris.jpg"
+        thumb : "own-tetris.jpg"
         big" : "own-tetris.jpg"
         preview : ""
         videos : ""
@@ -160,7 +160,7 @@ projects:
     active : true
     tags : ""
     media :
-      thumb : stalion-bsf.jpg"
+      thumb : "stalion-bsf.jpg"
       big" : "stalion-bsf.jpg"
       preview : ""
       videos : ""
@@ -175,7 +175,7 @@ projects:
     active : true,
     tags : ""
     media :
-      thumb : scansource-drivee.jpg"
+      thumb : "scansource-drivee.jpg"
       big" : "scansource-drivee.jpg"
       preview : ""
       videos : ""
@@ -190,7 +190,7 @@ projects:
     active : true,
     tags : ""
     media :
-        thumb : febiac-autosalon.jpg"
+        thumb : "febiac-autosalon.jpg"
         big" : "febiac-autosalon.jpg"
         preview : ""
         videos : ""
@@ -211,7 +211,7 @@ projects:
       - 522081b47c780f78e5ce4a19
       - 522081b47c780f78e5ce4a18
     media :
-        thumb : own-snake.jpg"
+        thumb : "own-snake.jpg"
         big" : "own-snake.jpg"
         preview : ""
         videos : ""
@@ -226,7 +226,7 @@ projects:
     active : true
     tags : ""
     media :
-      thumb : mercedes-freemind.jpg"
+      thumb : "mercedes-freemind.jpg"
       big" : "mercedes-freemind.jpg"
       preview : ""
       videos : ""
@@ -241,7 +241,7 @@ projects:
     active : true
     tags : ""
     media :
-      thumb : champion-rainhunters.jpg"
+      thumb : "champion-rainhunters.jpg"
       big" : "champion-rainhunters.jpg"
       preview : ""
       videos : ""

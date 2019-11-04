@@ -9,9 +9,9 @@ const MeStyled = styled.div`
 
   .wrapper {
     display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(auto-fill, 150px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 150px);
+    grid-gap: 0.625rem;
+    margin-bottom: 1rem;
   }
 
   .hide {
