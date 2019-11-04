@@ -28,9 +28,9 @@ const ProjectStyled = styled.a`
       opacity: 1;
       top: 0;
       left: 0;
-      width: 310px;
-      height: 150px;
-      background: url('/images/layout/inset-shade.png') center center no-repeat;
+      right: 0;
+      bottom: 0;
+      background: url('/images/layout/inset-shade.png') ;
       transition: opacity 700ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 0ms;
     }
 
