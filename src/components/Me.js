@@ -192,7 +192,7 @@ const Me = () => (
         </div>
 
         <div className="pic shade">
-          <img src="http://www.gravatar.com/avatar/1a8ef93be6fa5e0c482ad44281f75770.jpg?s=150" alt="Robbie Bardijn" />
+          <img src="//www.gravatar.com/avatar/1a8ef93be6fa5e0c482ad44281f75770.jpg?s=150" alt="Robbie Bardijn" />
         </div>
 
         <div className="cv shade">
