@@ -5,6 +5,10 @@ const ProjectStyled = styled.a`
   height: 150px;
   overflow: hidden;
 
+  &.inback {
+
+  }
+
   &:hover {
     .inner {
       .insetshade {

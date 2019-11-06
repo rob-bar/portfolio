@@ -89,17 +89,55 @@ const MeStyled = styled.div`
   .norm {
     width: 100%;
     height: 100%;
-    padding: 1.7rem;
+    padding: 1.3rem;
     border-radius: 5px;
     background: url('/images/layout/pat.png?1390329945'), linear-gradient(rgba(255, 255, 255, 0), #dfdfdf);
     background-color: white;
 
     .arrow {
       position: absolute;
-      right: -16px;
-      top: 20px;
+      right: 165px;
+      bottom: -30px;
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
       transform: scale(1, 1);
       transition: transform 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 0ms;
+
+      .angle {
+        position: absolute;
+        left: 5px;
+        top: -10px;
+        width: 16px;
+        height: 16px;
+        transform: rotate(45deg);
+        background: url('/images/layout/pat.png?1390329945'), linear-gradient(to left, #DFDFDF, #DEDEDE);
+        background-color: #DFDFDF;
+        box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px 0;
+      }
+
+      @media screen and (min-width: 640px) {
+        position: absolute;
+        right: -20px;
+        top: 20px;
+        width: 20px;
+        height: 30px;
+        overflow: hidden;
+        transform: scale(1, 1);
+        transition: transform 500ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 0ms;
+
+        .angle {
+          position: absolute;
+          left: -10px;
+          top: 5px;
+          width: 16px;
+          height: 16px;
+          transform: rotate(45deg);
+          background: url('/images/layout/pat.png?1390329945'), linear-gradient(to left, #F7F7F7, #F4F4F4);
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px 0;
+        }
+      }
     }
   }
 
@@ -107,7 +145,9 @@ const MeStyled = styled.div`
     width: 100%;
     height: 100%;
     display: none;
-    padding: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 5px;
     background: url('/images/layout/pat.png?1390329945'), linear-gradient(rgba(62, 171, 233, 0), #0077bb);
     background-color: #3eabe9;
@@ -133,7 +173,7 @@ const MeStyled = styled.div`
     }
 
     p {
-      margin: 0.15em 0;
+      margin: 0.3rem 0;
       font-family: "osl";
       font-size: 20px;
       color: black;
@@ -149,6 +189,13 @@ const MeStyled = styled.div`
         color: black;
         text-decoration: none;
 
+        &.mail {
+          font-size: 18px;
+          span {
+            font-size: 16px;
+          }
+        }
+
         &.tel {
           font-size: 18px;
         }
@@ -161,17 +208,15 @@ const Me = () => (
   <MeStyled>
     <div id="me" className="intro perspective">
       <div className="wrapper">
-        <div className="baloon shade">
-          <div className="norm">
-            <img
-              src="/images/ui/arrows/baloon-white.png"
-              alt="arrow"
-              className="arrow"
-            />
+        <div className="baloon">
+          <div className="norm shade">
+            <div className="arrow">
+              <div className="angle"></div>
+            </div>
             <h1>Robbie Bardijn</h1>
             <p>
-              <a href="mailto:robbie.bardijn@gmail.com">
-                robbie.bardijn@gmail.com
+              <a href="mailto:robbie.bardijn.works@gmail.com" className="mail">
+                robbie.bardijn.works<span>@</span>gmail.com
               </a>
             </p>
             <p>
@@ -180,12 +225,10 @@ const Me = () => (
               </a>
             </p>
           </div>
-          <div className="hov">
-            <img
-              src="/images/ui/arrows/baloon-blue.png"
-              alt="arrow"
-              className="arrow"
-            />
+          <div className="hov shade">
+            <div className="arrow">
+              <div className="angle"></div>
+            </div>
             <h1>Hire me...</h1>
             <p>I’m glad to help</p>
           </div>
