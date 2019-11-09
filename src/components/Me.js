@@ -112,6 +112,7 @@ const MeStyled = styled.div`
       background: url("/images/layout/pat.png?1390329945"),
         linear-gradient(rgba(255, 255, 255, 0), #dfdfdf);
       background-color: white;
+      transform-style: preserve-3d;
       backface-visibility: hidden;
 
       .arrow {
@@ -121,6 +122,7 @@ const MeStyled = styled.div`
         width: 30px;
         height: 30px;
         overflow: hidden;
+        transform-style: preserve-3d;
         backface-visibility: hidden;
 
         .angle {
@@ -130,6 +132,7 @@ const MeStyled = styled.div`
           width: 16px;
           height: 16px;
           transform: rotate(45deg);
+          backface-visibility: hidden;
           background: url("/images/layout/pat.png?1390329945"),
             linear-gradient(to left, #dfdfdf, #dedede);
           background-color: #dfdfdf;
@@ -175,6 +178,7 @@ const MeStyled = styled.div`
       background: url("/images/layout/pat.png?1390329945"),
         linear-gradient(rgba(62, 171, 233, 0), #0077bb);
       background-color: #3eabe9;
+      transform-style: preserve-3d;
       backface-visibility: hidden;
       transform: rotateY(180deg);
 
@@ -189,6 +193,7 @@ const MeStyled = styled.div`
         width: 30px;
         height: 30px;
         overflow: hidden;
+        transform-style: preserve-3d;
 
         .angle {
           position: absolute;
@@ -215,7 +220,7 @@ const MeStyled = styled.div`
             top: 5px;
             width: 16px;
             height: 16px;
-            transform: rotate(45deg);
+            transform: rotateZ(45deg);
             background: url("/images/layout/pat.png?1390329945"),
               linear-gradient(to top,#367EBD , #287dc7);
             background-color: #3C85C3;
