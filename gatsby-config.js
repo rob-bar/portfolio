@@ -20,8 +20,19 @@ module.exports = {
         path: `${__dirname}/static/images`,
       },
     },
-
-    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `RobbieBardijn`,
+        short_name: `RobbieBardijn`,
+        start_url: `/`,
+        background_color: `#198dcf`,
+        theme_color: `#198dcf`,
+        display: `standalone`,
+        icon: `static/images/icon/fav.png`
+      },
+    },
+    `gatsby-transformer-sharp`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
