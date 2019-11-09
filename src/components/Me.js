@@ -193,7 +193,8 @@ const MeStyled = styled.div`
         width: 30px;
         height: 30px;
         overflow: hidden;
-        transform-style: preserve-3d;
+        // backface-visibility: hidden;
+        // transform-style: preserve-3d;
 
         .angle {
           position: absolute;
@@ -201,7 +202,7 @@ const MeStyled = styled.div`
           top: -8px;
           width: 16px;
           height: 16px;
-          transform: rotate(45deg);
+          transform: rotateZ(45deg);
           background: url("/images/layout/pat.png?1390329945");
           background-color: #0077bb;
           box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px 0;
