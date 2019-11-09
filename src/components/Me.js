@@ -52,7 +52,7 @@ const MeStyled = styled.div`
       left: 0;
       display: block;
       text-decoration: none;
-      background-color: #3d3d3d;
+      background-color: #166362;
 
       .linkicon {
         color: #141414;

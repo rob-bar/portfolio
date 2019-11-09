@@ -34,7 +34,6 @@ const NavigationItemsStyled = styled.ul`
 `
 const SocialItemsStyled = styled.ul`
   display: flex;
-  align-items: stretch;
   list-style-type: none;
 `
 
