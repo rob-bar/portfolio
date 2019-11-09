@@ -6,7 +6,6 @@ const ProjectStyled = styled.a`
   overflow: hidden;
 
   &.inback {
-
   }
 
   &:hover {
@@ -15,7 +14,6 @@ const ProjectStyled = styled.a`
         opacity: 0.5;
       }
     }
-
 
     .inner {
       img {
@@ -34,8 +32,8 @@ const ProjectStyled = styled.a`
       left: 0;
       right: 0;
       bottom: 0;
-      background: url('/images/layout/inset-shade.png') ;
-      transition: opacity 700ms cubic-bezier(0.190, 1.000, 0.220, 1.000) 0ms;
+      background: url("/images/layout/inset-shade.png");
+      transition: opacity 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
     }
 
     img {
@@ -49,7 +47,15 @@ const ProjectStyled = styled.a`
 
 const Project = ({ project }) => {
   return (
-    <ProjectStyled className="shade" href="#">
+    <ProjectStyled
+      className="shade"
+      href={
+        project.title === "Asteroids"
+          ? "https://suspicious-volhard-c8d460.netlify.com/"
+          : "#"
+      }
+      target="_blank"
+    >
       <div className="inner">
         <img
           src={`/images/projects/thumbs/${project.media.thumb}`}
