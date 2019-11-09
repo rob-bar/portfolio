@@ -4,6 +4,15 @@ import React from "react"
 const ProjectStyled = styled.a`
   height: 150px;
   overflow: hidden;
+  opacity: .4;
+  cursor: default;
+  pointer-events: none;
+
+  &.active {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+  }
 
   &.inback {
   }
@@ -48,7 +57,7 @@ const ProjectStyled = styled.a`
 const Project = ({ project }) => {
   return (
     <ProjectStyled
-      className="shade"
+      className={`shade ${(project.title === "Asteroids") && 'active'}`}
       href={
         project.title === "Asteroids"
           ? "https://suspicious-volhard-c8d460.netlify.com/"
