@@ -1,8 +1,7 @@
 import styled from "styled-components"
 import React from "react"
 
-const NavItemStyled = styled.li`
-  color: red;
+export const NavItemStyled = styled.li`
   color: white;
   box-shadow: 0.0625rem 0 0 0 #fafafa inset;
   border-right: 0.0625rem solid #d0d0d0;
@@ -10,6 +9,13 @@ const NavItemStyled = styled.li`
   align-items: stretch;
   overflow: hidden;
   height: 100%;
+
+  &.--noHover {
+    a {
+      transform: translateY(0);
+      height: 100%;
+    }
+  }
 
   a {
     color: black;
@@ -20,7 +26,7 @@ const NavItemStyled = styled.li`
     line-height: 1.4;
     color: black;
     transform: translateY(-101%);
-    transition: transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 
     &:hover {
       transform: translateY(0);
@@ -49,20 +55,30 @@ const NavItemStyled = styled.li`
   }
 `
 
-const NavItem = ({ nav }) => (
-  <NavItemStyled>
-    {nav.text && (
-      <a href={nav.url}>
-        <span className="NavItemHover">{nav.text}</span>
-        <span className="NavItemNormal">{nav.text}</span>
-      </a>
+const NavItem = ({ nav, ...props }) => (
+  <React.Fragment>
+    {!nav && props.children}
+    {nav && (
+      <NavItemStyled>
+        {nav && nav.text && (
+          <a href={nav.url}>
+            <span className="NavItemHover">{nav.text}</span>
+            <span className="NavItemNormal">{nav.text}</span>
+          </a>
+        )}
+
+        {nav && nav.icon && (
+          <a href={nav.url}>
+            <span className="NavItemHover">
+              <i className={`${nav.iconset} fa-${nav.icon}`}></i>
+            </span>
+            <span className="NavItemNormal">
+              <i className={`${nav.iconset} fa-${nav.icon}`}></i>
+            </span>
+          </a>
+        )}
+      </NavItemStyled>
     )}
-    {nav.icon && (
-      <a href={nav.url}>
-        <span className="NavItemHover"><i className={`${nav.iconset} fa-${nav.icon}`}></i></span>
-        <span className="NavItemNormal"><i className={`${nav.iconset} fa-${nav.icon}`}></i></span>
-      </a>
-    )}
-  </NavItemStyled>
+  </React.Fragment>
 )
 export default NavItem

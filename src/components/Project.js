@@ -70,7 +70,7 @@ const Project = ({ project }) => {
           src={`/images/projects/thumbs/${project.media.thumb}`}
           alt={project.title}
         />
-        <div class="insetshade"></div>
+        <div className="insetshade"></div>
       </div>
     </ProjectStyled>
   )
