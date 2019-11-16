@@ -82,8 +82,10 @@ const MobileNavFlyOut = styled.ul`
   list-style-type: none;
   transform: translateY(-100%);
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0;
 
   &.--open {
+    opacity: 1;
     transform: translateY(0);
   }
 
@@ -94,18 +96,8 @@ const MobileNavFlyOut = styled.ul`
     font-family: "exl";
     font-size: 2rem;
     color: black;
-    transform: translateY(-101%);
-    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-
-    span {
-      padding: 0;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
-    }
   }
+
   @media ${device.portrait} {
     display: none;
   }
