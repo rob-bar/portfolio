@@ -8,7 +8,6 @@ export const NavItemStyled = styled.li`
   display: flex;
   align-items: stretch;
   overflow: hidden;
-  height: 100%;
 
   &.--noHover {
     a {
@@ -25,7 +24,7 @@ export const NavItemStyled = styled.li`
     font-size: 2rem;
     line-height: 1.4;
     color: black;
-    transform: translateY(-101%);
+    transform: translateY(-100%);
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 
     &:hover {

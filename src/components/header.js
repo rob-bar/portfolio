@@ -25,6 +25,7 @@ const NavigationStyled = styled.nav`
   position: relative;
   overflow: hidden;
   width: 100%;
+  height: 100%;
   height: 3.475rem;
   display: none;
 
@@ -41,6 +42,7 @@ const NavigationItemsStyled = styled.ul`
 
 const SocialItemsStyled = styled.ul`
   display: flex;
+  height: 100%;
   list-style-type: none;
 `
 
