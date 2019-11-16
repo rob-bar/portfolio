@@ -83,7 +83,7 @@ const MobileNavFlyOut = styled.ul`
   padding: 0.65rem 0.75rem;
   list-style-type: none;
   transform: translateY(-100%);
-  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   opacity: 0;
 
   &.--open {
