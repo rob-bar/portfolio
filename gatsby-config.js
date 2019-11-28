@@ -6,6 +6,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    { resolve: `gatsby-plugin-styled-components` },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -29,10 +30,10 @@ module.exports = {
         background_color: `#198dcf`,
         theme_color: `#198dcf`,
         display: `standalone`,
-        icon: `static/images/icon/fav.png`
+        icon: `static/images/icon/fav.png`,
       },
     },
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
