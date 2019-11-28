@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import React, { useRef } from "react"
+import { useInterval } from "react-use"
 
 const MeStyled = styled.div`
   .inback {
@@ -87,13 +88,13 @@ const MeStyled = styled.div`
   .baloon {
     grid-column: 1 / 3;
     z-index: 2;
-    transition: transform .7s cubic-bezier(.25,.64,.46,1.16);
+    transition: transform 0.7s cubic-bezier(0.25, 0.64, 0.46, 1.16);
     position: relative;
     transform-style: preserve-3d;
     transform: rotateX(0);
 
     @media screen and (min-width: 640px) {
-      transition: transform 1s cubic-bezier(.25,.64,.46,1.16);
+      transition: transform 1s cubic-bezier(0.25, 0.64, 0.46, 1.16);
     }
 
     &.--back-shown {
@@ -223,8 +224,8 @@ const MeStyled = styled.div`
             height: 16px;
             transform: rotateZ(45deg);
             background: url("/images/layout/pat.png?1390329945"),
-              linear-gradient(to top,#367EBD , #287dc7);
-            background-color: #3C85C3;
+              linear-gradient(to top, #367ebd, #287dc7);
+            background-color: #3c85c3;
             box-shadow: rgba(0, 0, 0, 0.5) 0 0 4px 0;
           }
         }
@@ -278,10 +279,13 @@ const Me = () => {
   const baloon = useRef(null)
 
   const onToggleBack = e => {
-    e.preventDefault()
-    console.log(baloon.current);
-    baloon.current.classList.toggle("--back-shown");
+    if (e) {
+      e.preventDefault()
+    }
+    baloon.current.classList.toggle("--back-shown")
   }
+
+  useInterval(onToggleBack, 10000)
 
   return (
     <MeStyled>
@@ -316,7 +320,11 @@ const Me = () => {
             </div>
           </div>
 
-          <div className="pic shade" onClick={onToggleBack} style={{cursor: "pointer"}}>
+          <div
+            className="pic shade"
+            onClick={onToggleBack}
+            style={{ cursor: "pointer" }}
+          >
             <img
               src="//www.gravatar.com/avatar/1a8ef93be6fa5e0c482ad44281f75770.jpg?s=150"
               alt="Robbie Bardijn"

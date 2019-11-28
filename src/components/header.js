@@ -116,7 +116,7 @@ const Header = ({ siteTitle }) => {
     <React.Fragment>
       <MobileNavFlyOut ref={flyOutRef}>
         {siteData.navs.map((nav, i) => (
-          <li>
+          <li key={`li${i}`}>
             <a key={`nav${i}`} href={nav.url}>
               <span>{nav.text}</span>
             </a>
