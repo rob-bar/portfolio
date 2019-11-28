@@ -24,7 +24,7 @@ export const NavItemStyled = styled.li`
     font-size: 2rem;
     line-height: 1.4;
     color: black;
-    transform: translateY(-100%);
+    transform: translateY(calc(-100% - 1px));
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 
     &:hover {
