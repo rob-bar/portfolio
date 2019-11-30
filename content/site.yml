@@ -236,7 +236,8 @@ projects:
     client : "No client, just for fun"
     type : Game
     description : "I wanted to get the to know the html5 canvas element better.So I build a couple of games in that technology.Canvas snake was one of them, the reason why I chose for snake was because I wanted to make a game that was not to easy to make but also not to difficult.I think I learned a big part of Javascript skills by making the game.The most difficult part was making the body with all the right turns and images, the rest was just good timing and fruit generation.Another thing that was not so simple was the drop shadow on the snake.I'm glad I made this project. Home you enjoy playing the game.Feel free play,share or submit your score."
-    active : false
+    active : true
+    live_url: https://laughing-thompson-07317d.netlify.com/
     tags :
       - Game
       - 522081b47c780f78e5ce4a05
