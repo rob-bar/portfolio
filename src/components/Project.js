@@ -50,6 +50,8 @@ const ProjectStyled = styled.a`
       transform: none;
       transition: transform 5s cubic-bezier(0.215, 0.61, 0.355, 1) 0ms;
       margin: -25px 0 0 -25px;
+      width: 360px;
+      height: 200px;
     }
   }
 `
@@ -57,10 +59,10 @@ const ProjectStyled = styled.a`
 const Project = ({ project }) => {
   return (
     <ProjectStyled
-      className={`shade ${(project.title === "Asteroids") && 'active'}`}
+      className={`shade ${(project.active)? 'active':''}`}
       href={
-        project.title === "Asteroids"
-          ? "https://suspicious-volhard-c8d460.netlify.com/"
+        project.live_url
+          ? project.live_url
           : "#"
       }
       target="_blank"
