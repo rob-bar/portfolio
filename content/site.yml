@@ -47,7 +47,7 @@ projects:
       As for the React part, we mainly invested on Hooks and Context Api. Nothing works as smooth as to combine Providers and Pure function together.
       Business logic in Pure functions and Providers, response to state changes in the components and their styles nicely separated.
       Testig was done with Jest and Cypress.
-    active : false,
+    active : false
     tags :
       - Next
       - React
