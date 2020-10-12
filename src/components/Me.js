@@ -323,7 +323,10 @@ const Me = () => {
           <div
             className="pic shade"
             onClick={onToggleBack}
+            onKeyDown={onToggleBack}
             style={{ cursor: "pointer" }}
+            role="button"
+            tabIndex="-1"
           >
             <img
               src="//www.gravatar.com/avatar/1a8ef93be6fa5e0c482ad44281f75770.jpg?s=150"
