@@ -11,6 +11,7 @@ const ProjectsStyled = styled.div`
 const Projects = () => (
   <ProjectsStyled>
     {siteData.projects.map((project, i) => (
+      project.active &&
       <Project key={`project_${project.title}`} project={project} />
     ))}
   </ProjectsStyled>

@@ -7,6 +7,54 @@ import NavItem from "./NavItem"
 import styled from "styled-components"
 import { NavItemStyled } from "./NavItem"
 
+const Header = ({ siteTitle }) => {
+  const flyOutRef = useRef(null);
+
+  const toggleFlyout = (e)=> {
+    flyOutRef.current.classList.toggle("--open");
+  }
+
+  return (
+    <React.Fragment>
+      {/* <MobileNavFlyOut ref={flyOutRef}>
+        {siteData.navs.map((nav, i) => (
+          <li key={`li${i}`}>
+            <a key={`nav${i}`} href={nav.url}>
+              <span>{nav.text}</span>
+            </a>
+          </li>
+        ))}
+      </MobileNavFlyOut> */}
+      <HeaderStyled>
+        {/* <MobileNavStyled>
+          <NavItemStyled className="--noHover">
+            <a href="#" onClick={toggleFlyout}>
+              <span className="NavItemNormal">
+                <i className="far fa-sm fa-ellipsis-h"></i>
+              </span>
+            </a>
+          </NavItemStyled>
+        </MobileNavStyled>
+        <NavigationStyled>
+          <NavigationItemsStyled>
+            {siteData.navs.map((nav, i) => (
+              <NavItem key={`nav${i}`} nav={nav} />
+            ))}
+          </NavigationItemsStyled>
+        </NavigationStyled> */}
+        <AllrightsReserved>
+          {`${new Date().getFullYear()} © All rights reserved`}
+        </AllrightsReserved>
+        <SocialItemsStyled>
+          {siteData.socials.map((nav, i) => (
+            <NavItem key={`nav${i}`} nav={nav} />
+          ))}
+        </SocialItemsStyled>
+      </HeaderStyled>
+    </React.Fragment>
+  )
+}
+
 const HeaderStyled = styled.header`
   width: 100%;
   padding: 0 0.5rem;
@@ -53,12 +101,13 @@ const AllrightsReserved = styled.aside`
   font-weight: normal;
   font-style: normal;
   flex: 1 0 auto;
+  margin-right: 0;
   padding: 1rem;
-  display: none;
+  display: block;
 
-  @media ${device.landscape} {
+  /* @media ${device.landscape} {
     display: block;
-  }
+  } */
 `
 
 const MobileNavStyled = styled.ul`
@@ -105,53 +154,6 @@ const MobileNavFlyOut = styled.ul`
   }
 `
 
-const Header = ({ siteTitle }) => {
-  const flyOutRef = useRef(null);
-
-  const toggleFlyout = (e)=> {
-    flyOutRef.current.classList.toggle("--open");
-  }
-
-  return (
-    <React.Fragment>
-      <MobileNavFlyOut ref={flyOutRef}>
-        {siteData.navs.map((nav, i) => (
-          <li key={`li${i}`}>
-            <a key={`nav${i}`} href={nav.url}>
-              <span>{nav.text}</span>
-            </a>
-          </li>
-        ))}
-      </MobileNavFlyOut>
-      <HeaderStyled>
-        <MobileNavStyled>
-          <NavItemStyled className="--noHover">
-            <a href="#" onClick={toggleFlyout}>
-              <span className="NavItemNormal">
-                <i className="far fa-sm fa-ellipsis-h"></i>
-              </span>
-            </a>
-          </NavItemStyled>
-        </MobileNavStyled>
-        <NavigationStyled>
-          <NavigationItemsStyled>
-            {siteData.navs.map((nav, i) => (
-              <NavItem key={`nav${i}`} nav={nav} />
-            ))}
-          </NavigationItemsStyled>
-        </NavigationStyled>
-        <AllrightsReserved>
-          {`${new Date().getFullYear()} © All rights reserved`}
-        </AllrightsReserved>
-        <SocialItemsStyled>
-          {siteData.socials.map((nav, i) => (
-            <NavItem key={`nav${i}`} nav={nav} />
-          ))}
-        </SocialItemsStyled>
-      </HeaderStyled>
-    </React.Fragment>
-  )
-}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
