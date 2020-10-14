@@ -27,6 +27,52 @@ socials:
     url: https://github.com/rob-bar
 
 projects:
+  - title: VTMBeleving
+    slug: /vtm-beleving
+    client: "DPGMedia"
+    type: Website
+    description: ""
+    active: true
+    tags:
+      - React
+      - Typescript
+      - Node
+      - AWS
+      - GraphQL
+      - Styled Components
+      - NodeJs
+      - Drupal
+      - Java
+    media:
+      thumb: "vtm.jpg"
+      big": "vtm.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2016-09-22T22:00:00.000Z"
+    likes: 0
+    live_url: https://vtm.be/
+  - title: Eventplanner
+    slug: /eventplanner
+    client: "Pinkminds"
+    type: Website
+    description: ""
+    active: true
+    tags:
+      - vanilajs
+      - PHP
+      - Html
+      - Full redesign
+      - Sass
+    media:
+      thumb: "eventplanner.jpg"
+      big": "eventplanner.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2016-09-22T22:00:00.000Z"
+    likes: 0
+    live_url: https://eventplanner.be/
   - title: Paper Manager
     slug: /dpg-media-paper-manager
     client: "DPG Media"
@@ -58,6 +104,50 @@ projects:
       pictures: ""
     launch_date: "2019-11-26T22:00:00.000Z"
     likes: 0
+  - title: Carrefour Drive Store
+    slug: /carrefour-drive
+    client: "Endare"
+    type: Mobile App
+    description: ""
+    active: true
+    tags:
+      - Angular
+      - Cordova
+      - ES2016
+      - Css
+      - Html
+      - IonicJs
+    media:
+      thumb: "carrefour.jpg"
+      big": "carrefour.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2016-09-09T22:00:00.000Z"
+    likes: 0
+    live_url: https://drive.carrefour.eu/nl/home
+  - title: Informatie Vlaanderen
+    slug: /informatie-vlaanderen
+    client: "Ausy"
+    type: Components
+    description: ""
+    active: true
+    tags:
+      - Vuejs
+      - VanilaJs
+      - Node
+      - Npm
+      - Google Maps
+      - Components
+    media:
+      thumb: "vlaanderen.jpg"
+      big": "vlaanderen.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2018-10-11T22:00:00.000Z"
+    likes: 0
+    live_url: https://overheid.vlaanderen.be/informatie-vlaanderen
   - title: Tetris
     client: "No client, just for fun"
     type: Game

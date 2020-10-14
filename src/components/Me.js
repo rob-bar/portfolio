@@ -1,8 +1,68 @@
 import styled from "styled-components"
 import React, { useRef } from "react"
-import { useInterval } from "react-use"
 
+const Me = () => {
+  const baloon = useRef(null)
+
+  const turnBalloon = () => {
+    baloon.current.classList.toggle("--back-shown")
+  }
+
+  return (
+    <MeStyled>
+      <div id="me" className="intro perspective">
+        <div className="wrapper">
+          <div className="baloon" ref={baloon}>
+            <div className="norm shade">
+              <div className="arrow">
+                <div className="angle"></div>
+              </div>
+              <h1>Robbie Bardijn</h1>
+              <p>
+                <a
+                  href="mailto:robbie.bardijn.works@gmail.com"
+                  className="mail"
+                >
+                  robbie.bardijn.works<span>@</span>gmail.com
+                </a>
+              </p>
+              <p>
+                <a href="tel: 0032472798863" className="tel">
+                  0472 / 79.88.63
+                </a>
+              </p>
+            </div>
+            <div className="hov shade">
+              <div className="arrow">
+                <div className="angle"></div>
+              </div>
+              <h1>Hire me...</h1>
+              <p>I’m glad to help</p>
+            </div>
+          </div>
+
+          <div
+            className="pic shade"
+          >
+            <img
+              src={`/images/me.jpg`}
+              alt="Robbie Bardijn"
+            />
+          </div>
+          
+          <div className="cv shade">
+            <a  href="/downloads/cv-robbie-bardijn.pdf" target="_blank" onMouseEnter={turnBalloon} onMouseLeave={turnBalloon}>
+              <span className="linkicon fal fa-link"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </MeStyled>
+  )
+}
 const MeStyled = styled.div`
+  outline: none;
+
   .inback {
     opacity: 0.5;
     transform: translate3d(0, 0, -150px);
@@ -26,9 +86,15 @@ const MeStyled = styled.div`
   .pic {
     transform: translate3d(0, 0, 0);
     z-index: 1;
+    outline: none;
     background-color: white;
     width: 150px;
     height: 150px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .pic .shade {
@@ -62,25 +128,8 @@ const MeStyled = styled.div`
         transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
       }
 
-      .text {
-        font-family: "fut";
-        font-size: 18px;
-        color: #141414;
-        font-weight: normal;
-        font-style: normal;
-        text-align: center;
-        display: block;
-        opacity: 0;
-        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
-      }
-
       &:hover .linkicon {
-        transform: scale(0.9, 0.9);
-        padding: 1.5rem 2.5rem;
-      }
-
-      &:hover .text {
-        opacity: 1;
+        transform: scale(0.9, 0.9) rotate(.25turn);
       }
     }
   }
@@ -275,75 +324,5 @@ const MeStyled = styled.div`
     }
   }
 `
-const Me = () => {
-  const baloon = useRef(null)
-
-  const onToggleBack = e => {
-    if (e) {
-      e.preventDefault()
-    }
-    baloon.current.classList.toggle("--back-shown")
-  }
-
-  useInterval(onToggleBack, 10000)
-
-  return (
-    <MeStyled>
-      <div id="me" className="intro perspective">
-        <div className="wrapper">
-          <div className="baloon" ref={baloon}>
-            <div className="norm shade">
-              <div className="arrow">
-                <div className="angle"></div>
-              </div>
-              <h1>Robbie Bardijn</h1>
-              <p>
-                <a
-                  href="mailto:robbie.bardijn.works@gmail.com"
-                  className="mail"
-                >
-                  robbie.bardijn.works<span>@</span>gmail.com
-                </a>
-              </p>
-              <p>
-                <a href="tel: 0032472798863" className="tel">
-                  0472 / 79.88.63
-                </a>
-              </p>
-            </div>
-            <div className="hov shade">
-              <div className="arrow">
-                <div className="angle"></div>
-              </div>
-              <h1>Hire me...</h1>
-              <p>I’m glad to help</p>
-            </div>
-          </div>
-
-          <div
-            className="pic shade"
-            onClick={onToggleBack}
-            onKeyDown={onToggleBack}
-            style={{ cursor: "pointer" }}
-            role="button"
-            tabIndex="-1"
-          >
-            <img
-              src="//www.gravatar.com/avatar/1a8ef93be6fa5e0c482ad44281f75770.jpg?s=150"
-              alt="Robbie Bardijn"
-            />
-          </div>
-
-          <div className="cv shade">
-            <a href="/downloads/cv-robbie-bardijn.pdf" target="_blank">
-              <span className="linkicon fal fa-link"></span>
-              <span className="text">Curriculum Vitae</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </MeStyled>
-  )
-}
 
 export default Me
