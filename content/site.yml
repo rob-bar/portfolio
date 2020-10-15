@@ -148,6 +148,49 @@ projects:
     launch_date: "2018-10-11T22:00:00.000Z"
     likes: 0
     live_url: https://overheid.vlaanderen.be/informatie-vlaanderen
+  - title: Twizzi
+    slug: /twizzi
+    client: "One Agency"
+    type: Website
+    description: ""
+    active: true
+    tags:
+      - pug
+      - Sass
+      - Html
+      - full rebranding
+      - gulp
+      - Sass
+    media:
+      thumb: "twizzi.jpg"
+      big": "twizzi.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2014-10-12T22:00:00.000Z"
+    likes: 0
+    live_url: https://twizzi.be/
+  - title: Judicio
+    client: "Crosslang"
+    type: Translation Tool
+    description: ""
+    active: true
+    tags:
+      - pug
+      - Sass
+      - Html
+      - full rebranding
+      - gulp
+      - Sass
+    live_url: "https://judic.io/en"
+    media:
+      thumb: "judicio.jpg"
+      big": "judicio.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2013-12-11T23:00:00.000Z"
+    likes: 0
   - title: Tetris
     client: "No client, just for fun"
     type: Game
@@ -214,6 +257,28 @@ projects:
       pictures: ""
     launch_date: "2013-12-11T23:00:00.000Z"
     likes: 0
+  - title: Wonen Vlaanderen
+    slug: /wonen-vlaanderen
+    client: "One Agency"
+    type: Website
+    description: ""
+    active: true
+    tags:
+      - pug
+      - Sass
+      - Html
+      - full rebranding
+      - gulp
+      - Sass
+    media:
+      thumb: "wonen-vlaanderen.jpg"
+      big": "wonen-vlaanderen.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2013-03-05T22:00:00.000Z"
+    likes: 0
+    live_url: https://wonenvlaanderen.be/
   - title: Polygone Newyear
     client: ""
     type: SPA
@@ -248,20 +313,7 @@ projects:
       pictures: ""
     launch_date: "2012-06-11T22:00:00.000Z"
     likes: 0
-  - title: Viage launch
-    client: ""
-    type: SPA
-    description: ""
-    active: false
-    tags: ""
-    media:
-      thumb: "viage-viage.jpg"
-      big": "viage-viage.jpg"
-      preview: ""
-      videos: ""
-      pictures: ""
-    launch_date: "2013-12-11T23:00:00.000Z"
-    likes: 0
+
   - title: Stalion BSF
     client: ""
     type: Video
@@ -353,3 +405,18 @@ projects:
       pictures: ""
     launch_date: "2013-12-11T23:00:00.000Z"
     likes: 0
+  - title: Viage launch
+    client: "Polygone group"
+    type: Flash Single page app
+    description: ""
+    active: true
+    tags: ""
+    media:
+      thumb: "viage-viage.jpg"
+      big": "viage-viage.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2013-12-11T23:00:00.000Z"
+    likes: 0
+    live_url: https://viage.be/
