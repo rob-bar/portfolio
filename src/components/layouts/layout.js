@@ -19,6 +19,10 @@ const MainStyled = styled.main`
   padding: 0 .3125rem 4rem;
   margin: 0 auto;
   transition: width 700ms cubic-bezier(0.19, 1, 0.22, 1) 0ms;
+  
+  > * {
+    margin-bottom: 4.0625rem;
+  }
 
   @media screen and (min-width: 320px) {
     width: 320px;
