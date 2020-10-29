@@ -2,7 +2,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 import siteData from "../../content/site.yml"
-import { device } from "./mediaQuery"
 import NavItem from "./NavItem"
 import styled from "styled-components"
 
@@ -51,11 +50,7 @@ const NavigationStyled = styled.nav`
   width: 100%;
   height: 100%;
   height: 3.475rem;
-  display: none;
-
-  @media ${device.portrait} {
-    display: flex;
-  }
+  display: flex;
 `
 
 const NavigationItemsStyled = styled.ul`
