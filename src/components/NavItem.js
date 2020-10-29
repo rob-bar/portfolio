@@ -10,7 +10,13 @@ export const NavItemStyled = styled.li`
   overflow: hidden;
 
   &.--noHover {
+    button,
     a {
+      padding: 0;
+      appearance: none;
+      border: none;
+      outline: none;
+      background-color: transparent;
       transform: translateY(0);
       height: 100%;
     }

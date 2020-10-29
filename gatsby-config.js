@@ -34,6 +34,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-gtag`,
       options: {

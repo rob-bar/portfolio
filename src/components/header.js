@@ -28,11 +28,11 @@ const Header = ({ siteTitle }) => {
       <HeaderStyled>
         <MobileNavStyled>
           <NavItemStyled className="--noHover">
-            <a href="#" onClick={toggleFlyout}>
+            <button onClick={toggleFlyout}>
               <span className="NavItemNormal">
                 <i className="far fa-sm fa-ellipsis-h"></i>
               </span>
-            </a>
+            </button>
           </NavItemStyled>
         </MobileNavStyled>
         <NavigationStyled>
@@ -128,7 +128,7 @@ const MobileNavStyled = styled.ul`
 
 const MobileNavFlyOut = styled.ul`
   display: block;
-  position: absolute;
+  position: fixed;
   top: 3.475rem;
   left: 0.5rem;
   z-index: 10;
