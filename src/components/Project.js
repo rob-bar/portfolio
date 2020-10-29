@@ -4,9 +4,10 @@ import React from "react"
 const ProjectStyled = styled.a`
   height: 150px;
   overflow: hidden;
-  opacity: .4;
+  opacity: 0.4;
   cursor: default;
   pointer-events: none;
+  background-color: #fff;
 
   &.active {
     opacity: 1;
@@ -59,12 +60,8 @@ const ProjectStyled = styled.a`
 const Project = ({ project }) => {
   return (
     <ProjectStyled
-      className={`shade ${(project.active)? 'active':''}`}
-      href={
-        project.live_url
-          ? project.live_url
-          : "#"
-      }
+      className={`shade ${project.active ? "active" : ""}`}
+      href={project.live_url ? project.live_url : "#"}
       target="_blank"
     >
       <div className="inner">
