@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import { MeNotFound } from "../components/Me"
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout isErrorPage={true}>
     <SEO title="Not found" />
     <MeNotFound />
   </Layout>

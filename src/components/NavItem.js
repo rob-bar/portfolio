@@ -1,7 +1,5 @@
 import styled from "styled-components"
 import React from "react"
-import { navigate } from "@reach/router"
-import scrollTo from "gatsby-plugin-smoothscroll"
 
 export const NavItemStyled = styled.li`
   color: white;
@@ -30,6 +28,11 @@ export const NavItemStyled = styled.li`
     text-decoration: none;
     text-transform: uppercase;
     font-family: "exl";
+    padding: 0;
+    border: 0;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
     font-size: 2rem;
     line-height: 1.4;
     color: black;
@@ -69,13 +72,7 @@ const NavItem = ({ nav, ...props }) => (
     {nav && (
       <NavItemStyled>
         {nav && nav.text && (
-          <a
-            href={nav.url}
-            onClick={() => {
-              navigate(nav.url)
-              scrollTo(nav.url)
-            }}
-          >
+          <a href={nav.url}>
             <span className="NavItemHover">{nav.text}</span>
             <span className="NavItemNormal">{nav.text}</span>
           </a>

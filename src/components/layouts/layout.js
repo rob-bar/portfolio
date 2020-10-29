@@ -2,7 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import Header from "../header"
+import Header from "../Header"
+import HeaderNotFound from "../HeaderNotFound"
 import "./layout.css"
 import "./fontAwesome.css"
 
@@ -36,7 +37,7 @@ const MainStyled = styled.main`
     width: 1600px;
   }
 `
-const Layout = ({ children }) => {
+const Layout = ({ children, isErrorPage = false }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -50,7 +51,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <FixedBackground />
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {isErrorPage ? (
+        <HeaderNotFound siteTitle={data.site.siteMetadata.title} />
+      ) : (
+        <Header siteTitle={data.site.siteMetadata.title} />
+      )}
+
       <MainStyled>{children}</MainStyled>
     </>
   )

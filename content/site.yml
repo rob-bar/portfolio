@@ -7,6 +7,9 @@ navs:
     url: "#clients"
   # - text: skills
   #   url: /skills
+navsBack:
+  - text: back
+    url: "/"
 
 socials:
   - active: true
