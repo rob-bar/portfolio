@@ -36,7 +36,7 @@ clients:
     image: pinkminds.png
     url: https://www.pinkminds.tv/
   - name: Carrefour
-    image: carrefour.svg
+    image: carrefour.png
     url: https://drive.carrefour.eu/
   - name: Endare
     image: endare.png
@@ -60,7 +60,7 @@ clients:
     image: chocomel.png
     url: https://www.chocomel.nl/
   - name: Proximus
-    image: proximus.svg
+    image: proximus.png
     url: https://www.proximus.be/
   - name: Scansource
     image: scansource.png

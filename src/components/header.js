@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
       <MobileNavFlyOut ref={flyOutRef}>
         {siteData.navs.map((nav, i) => (
           <li key={`li${i}`}>
-            <a key={`nav${i}`} href={nav.url}>
+            <a key={`nav${i}`} href={nav.url} onClick={toggleFlyout}>
               <span>{nav.text}</span>
             </a>
           </li>
