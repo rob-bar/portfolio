@@ -22,7 +22,7 @@ const Project = ({ client }) => {
       <img
         src={`/images/logos/${client.image}`}
         alt={client.name}
-        class="logo"
+        className="logo"
       />
     </ClientStyled>
   )

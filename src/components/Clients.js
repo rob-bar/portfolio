@@ -7,14 +7,18 @@ const ClientsStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, 150px);
   grid-gap: 0.625rem;
+  /* margin-bottom: 4.0625rem; */
 `
 
 const Clients = () => (
-  <ClientsStyled>
-    {siteData.clients.map(client => (
-      <Client key={`client_${client.name}`} client={client} />
-    ))}
-  </ClientsStyled>
+  <>
+    <div id="clients"></div>
+    <ClientsStyled>
+      {siteData.clients.map(client => (
+        <Client key={`client_${client.name}`} client={client} />
+      ))}
+    </ClientsStyled>
+  </>
 )
 
 export default Clients

@@ -16,6 +16,7 @@ export const NavItemStyled = styled.li`
     }
   }
 
+  button,
   a {
     color: black;
     text-decoration: none;

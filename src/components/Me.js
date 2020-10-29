@@ -9,59 +9,63 @@ const Me = () => {
   }
 
   return (
-    <MeStyled>
-      <div id="me" className="intro perspective">
-        <div className="wrapper">
-          <div className="baloon" ref={baloon}>
-            <div className="norm shade">
-              <div className="arrow">
-                <div className="angle"></div>
+    <>
+      <div id="me"></div>
+      <MeStyled>
+        <div className="intro perspective">
+          <div className="wrapper">
+            <div className="baloon" ref={baloon}>
+              <div className="norm shade">
+                <div className="arrow">
+                  <div className="angle"></div>
+                </div>
+                <h1>Robbie Bardijn</h1>
+                <p>
+                  <a
+                    href="mailto:robbie.bardijn.works@gmail.com"
+                    className="mail"
+                  >
+                    robbie.bardijn.works<span>@</span>gmail.com
+                  </a>
+                </p>
+                <p>
+                  <a href="tel: 0032472798863" className="tel">
+                    0472 / 79.88.63
+                  </a>
+                </p>
               </div>
-              <h1>Robbie Bardijn</h1>
-              <p>
-                <a
-                  href="mailto:robbie.bardijn.works@gmail.com"
-                  className="mail"
-                >
-                  robbie.bardijn.works<span>@</span>gmail.com
-                </a>
-              </p>
-              <p>
-                <a href="tel: 0032472798863" className="tel">
-                  0472 / 79.88.63
-                </a>
-              </p>
-            </div>
-            <div className="hov shade">
-              <div className="arrow">
-                <div className="angle"></div>
+              <div className="hov shade">
+                <div className="arrow">
+                  <div className="angle"></div>
+                </div>
+                <h1>Hire me...</h1>
+                <p>I’m glad to help</p>
               </div>
-              <h1>Hire me...</h1>
-              <p>I’m glad to help</p>
             </div>
-          </div>
 
-          <div
-            className="pic shade"
-          >
-            <img
-              src={`/images/me.jpg`}
-              alt="Robbie Bardijn"
-            />
-          </div>
-          
-          <div className="cv shade">
-            <a  href="/downloads/cv-robbie-bardijn.pdf" target="_blank" onMouseEnter={turnBalloon} onMouseLeave={turnBalloon}>
-              <span className="linkicon fal fa-link"></span>
-            </a>
+            <div className="pic shade">
+              <img src={`/images/me.jpg`} alt="Robbie Bardijn" />
+            </div>
+
+            <div className="cv shade">
+              <a
+                href="/downloads/cv-robbie-bardijn.pdf"
+                target="_blank"
+                onMouseEnter={turnBalloon}
+                onMouseLeave={turnBalloon}
+              >
+                <span className="linkicon fal fa-link"></span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </MeStyled>
+      </MeStyled>
+    </>
   )
 }
 const MeStyled = styled.div`
   outline: none;
+  margin-bottom: 4.0625rem;
 
   .inback {
     opacity: 0.5;
@@ -129,7 +133,7 @@ const MeStyled = styled.div`
       }
 
       &:hover .linkicon {
-        transform: scale(0.9, 0.9) rotate(.25turn);
+        transform: scale(0.9, 0.9) rotate(0.25turn);
       }
     }
   }

@@ -1,13 +1,12 @@
 navs:
+  - text: me
+    url: "#me"
   - text: work
-    url: /work
-    active: true
-  - text: skills
-    url: /skills
-    active: true
-  - text: blog
-    url: /blog
-    active: true
+    url: "#work"
+  - text: clients
+    url: "#clients"
+  # - text: skills
+  #   url: /skills
 
 socials:
   - active: true

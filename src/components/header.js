@@ -1,22 +1,22 @@
 // import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useRef } from "react"
 import siteData from "../../content/site.yml"
 import { device } from "./mediaQuery"
 import NavItem from "./NavItem"
 import styled from "styled-components"
-// import { NavItemStyled } from "./NavItem"
+import { NavItemStyled } from "./NavItem"
 
 const Header = ({ siteTitle }) => {
-  // const flyOutRef = useRef(null);
+  const flyOutRef = useRef(null)
 
-  // const toggleFlyout = (e)=> {
-  //   flyOutRef.current.classList.toggle("--open");
-  // }
+  const toggleFlyout = e => {
+    flyOutRef.current.classList.toggle("--open")
+  }
 
   return (
     <React.Fragment>
-      {/* <MobileNavFlyOut ref={flyOutRef}>
+      <MobileNavFlyOut ref={flyOutRef}>
         {siteData.navs.map((nav, i) => (
           <li key={`li${i}`}>
             <a key={`nav${i}`} href={nav.url}>
@@ -24,9 +24,9 @@ const Header = ({ siteTitle }) => {
             </a>
           </li>
         ))}
-      </MobileNavFlyOut> */}
+      </MobileNavFlyOut>
       <HeaderStyled>
-        {/* <MobileNavStyled>
+        <MobileNavStyled>
           <NavItemStyled className="--noHover">
             <a href="#" onClick={toggleFlyout}>
               <span className="NavItemNormal">
@@ -41,9 +41,10 @@ const Header = ({ siteTitle }) => {
               <NavItem key={`nav${i}`} nav={nav} />
             ))}
           </NavigationItemsStyled>
-        </NavigationStyled> */}
+        </NavigationStyled>
         <AllrightsReserved>
-          {`${new Date().getFullYear()} © All rights reserved`}
+          {`${new Date().getFullYear()} © `}
+          <span>All rights reserved</span>
         </AllrightsReserved>
         <SocialItemsStyled>
           {siteData.socials.map((nav, i) => (
@@ -69,24 +70,24 @@ const HeaderStyled = styled.header`
   box-shadow: rgba(0, 0, 0, 0.6) 0 0.125rem 0.625rem 0.3125rem,
     rgba(0, 0, 0, 0.3) 0 0.0625rem 0.4375rem 0 inset;
 `
-// const NavigationStyled = styled.nav`
-//   position: relative;
-//   overflow: hidden;
-//   width: 100%;
-//   height: 100%;
-//   height: 3.475rem;
-//   display: none;
+const NavigationStyled = styled.nav`
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  height: 3.475rem;
+  display: none;
 
-//   @media ${device.portrait} {
-//     display: flex;
-//   }
-// `
+  @media ${device.portrait} {
+    display: flex;
+  }
+`
 
-// const NavigationItemsStyled = styled.ul`
-//   display: flex;
-//   align-items: stretch;
-//   list-style-type: none;
-// `
+const NavigationItemsStyled = styled.ul`
+  display: flex;
+  align-items: stretch;
+  list-style-type: none;
+`
 
 const SocialItemsStyled = styled.ul`
   display: flex;
@@ -101,59 +102,63 @@ const AllrightsReserved = styled.aside`
   font-weight: normal;
   font-style: normal;
   flex: 1 0 auto;
+  text-align: right;
   margin-right: 0;
   padding: 1rem;
-  display: block;
 
-  /* @media ${device.landscape} {
-    display: block;
-  } */
+  span {
+    display: none;
+
+    @media (min-width: 720px) {
+      display: inline;
+    }
+  }
 `
 
-// const MobileNavStyled = styled.ul`
-//   display: flex;
-//   height: 100%;
-//   align-items: stretch;
-//   list-style-type: none;
+const MobileNavStyled = styled.ul`
+  display: flex;
+  height: 100%;
+  align-items: stretch;
+  list-style-type: none;
 
-//   @media ${device.portrait} {
-//     display: none;
-//   }
-// `
+  @media ${device.portrait} {
+    display: none;
+  }
+`
 
-// const MobileNavFlyOut = styled.ul`
-//   display: block;
-//   position: absolute;
-//   top: 3.475rem;
-//   left: 0.5rem;
-//   z-index: 10;
-//   background: url(../images/pat.png), linear-gradient(#fefdfd, #dadada);
-//   box-shadow: 0 0 0.625rem 0.2rem rgba(0, 0, 0, 0.3);
-//   padding: 0.65rem 0.75rem;
-//   list-style-type: none;
-//   transform: translateY(-100%);
-//   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-//   opacity: 0;
+const MobileNavFlyOut = styled.ul`
+  display: block;
+  position: absolute;
+  top: 3.475rem;
+  left: 0.5rem;
+  z-index: 10;
+  background: url(../images/pat.png), linear-gradient(#fefdfd, #dadada);
+  box-shadow: 0 0 0.625rem 0.2rem rgba(0, 0, 0, 0.3);
+  padding: 0.65rem 0.75rem;
+  list-style-type: none;
+  transform: translateY(-100%);
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1),
+    opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0;
 
-//   &.--open {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
+  &.--open {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-//   a {
-//     color: black;
-//     text-decoration: none;
-//     text-transform: uppercase;
-//     font-family: "exl";
-//     font-size: 2rem;
-//     color: black;
-//   }
+  a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "exl";
+    font-size: 2rem;
+    color: black;
+  }
 
-//   @media ${device.portrait} {
-//     display: none;
-//   }
-// `
-
+  @media ${device.portrait} {
+    display: none;
+  }
+`
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
