@@ -4,14 +4,12 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-:target {
+#me,
+#work,
+#clients {
   display: block;
   position: relative;
-  top: -7rem;
+  top: -7em;
   visibility: hidden;
 }
 

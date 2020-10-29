@@ -2,7 +2,7 @@ import React from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layouts/layout"
-import Me from "../components/Me"
+import { Me } from "../components/Me"
 import Projects from "../components/Projects"
 import Clients from "../components/Clients"
 import SEO from "../components/seo"

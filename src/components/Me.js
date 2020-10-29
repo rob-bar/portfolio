@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import React, { useRef } from "react"
 
-const Me = () => {
+export const Me = () => {
   const baloon = useRef(null)
 
   const turnBalloon = () => {
@@ -63,6 +63,59 @@ const Me = () => {
     </>
   )
 }
+
+export const MeNotFound = () => {
+  return (
+    <>
+      <div id="me"></div>
+      <MeStyled>
+        <div className="intro perspective">
+          <div className="wrapper">
+            <div className="baloon --back-shown">
+              <div className="hov shade">
+                <div className="arrow">
+                  <div className="angle"></div>
+                </div>
+                <h1>Sorry...</h1>
+                <p>I can't find this page</p>
+              </div>
+              <div className="norm shade">
+                <div className="arrow">
+                  <div className="angle"></div>
+                </div>
+                <h1>Robbie Bardijn</h1>
+                <p>
+                  <a
+                    href="mailto:robbie.bardijn.works@gmail.com"
+                    className="mail"
+                  >
+                    robbie.bardijn.works<span>@</span>gmail.com
+                  </a>
+                </p>
+                <p>
+                  <a href="tel: 0032472798863" className="tel">
+                    0472 / 79.88.63
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div className="pic shade">
+              <img src={`/images/me.jpg`} alt="Robbie Bardijn" />
+            </div>
+
+            <div className="cv shade">
+              <a href="/downloads/cv-robbie-bardijn.pdf" target="_blank">
+                <span className="linkicon fal fa-link"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </MeStyled>
+    </>
+  )
+}
+
 const MeStyled = styled.div`
   outline: none;
   margin-bottom: 4.0625rem;
@@ -328,5 +381,3 @@ const MeStyled = styled.div`
     }
   }
 `
-
-export default Me

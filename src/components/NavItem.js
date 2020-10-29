@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import React from "react"
+import { navigate } from "@reach/router"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 export const NavItemStyled = styled.li`
   color: white;
@@ -67,7 +69,13 @@ const NavItem = ({ nav, ...props }) => (
     {nav && (
       <NavItemStyled>
         {nav && nav.text && (
-          <a href={nav.url}>
+          <a
+            href={nav.url}
+            onClick={() => {
+              navigate(nav.url)
+              scrollTo(nav.url)
+            }}
+          >
             <span className="NavItemHover">{nav.text}</span>
             <span className="NavItemNormal">{nav.text}</span>
           </a>

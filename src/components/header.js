@@ -6,6 +6,8 @@ import { device } from "./mediaQuery"
 import NavItem from "./NavItem"
 import styled from "styled-components"
 import { NavItemStyled } from "./NavItem"
+import { navigate } from "@reach/router"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Header = ({ siteTitle }) => {
   const flyOutRef = useRef(null)
@@ -19,9 +21,15 @@ const Header = ({ siteTitle }) => {
       <MobileNavFlyOut ref={flyOutRef}>
         {siteData.navs.map((nav, i) => (
           <li key={`li${i}`}>
-            <a key={`nav${i}`} href={nav.url} onClick={toggleFlyout}>
+            <button
+              onClick={() => {
+                navigate(nav.url)
+                scrollTo(nav.url)
+                toggleFlyout()
+              }}
+            >
               <span>{nav.text}</span>
-            </a>
+            </button>
           </li>
         ))}
       </MobileNavFlyOut>
@@ -146,8 +154,13 @@ const MobileNavFlyOut = styled.ul`
     transform: translateY(0);
   }
 
+  button,
   a {
-    color: black;
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    padding: 0;
     text-decoration: none;
     text-transform: uppercase;
     font-family: "exl";
