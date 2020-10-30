@@ -8,6 +8,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     { resolve: `gatsby-plugin-styled-components` },
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          post: require.resolve("./src/components/layouts/Post.js"),
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `downloads`,
