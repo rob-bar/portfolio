@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import React from "react"
-import siteData from "../../content/site.yml"
+import data from "../../content/projects.yml"
 import Project from "./core/Project"
 
 const ProjectsStyled = styled.div`
@@ -13,7 +13,7 @@ const Projects = () => (
   <>
     <div id="work"></div>
     <ProjectsStyled>
-      {siteData.projects.map(
+      {data.projects.map(
         (project, i) =>
           project.active && (
             <Project key={`project_${project.title}`} project={project} />

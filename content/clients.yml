@@ -1,0 +1,55 @@
+clients:
+  - name: Vtm
+    image: vtm.png
+    url: https://vtm.be/
+  - name: Dpg Media
+    image: dpg-media.svg
+    url: https://www.dpgmedia.be/nl
+  - name: Pinkminds
+    image: pinkminds.png
+    url: https://www.pinkminds.tv/
+  - name: Carrefour
+    image: carrefour.png
+    url: https://drive.carrefour.eu/
+  - name: Endare
+    image: endare.png
+    url: https://www.endare.com/
+  - name: Focus
+    image: politie.svg
+    url: https://www.politieantwerpen.be/
+  - name: Fluvius
+    image: fluvius.svg
+    url: https://www.fluvius.be/nl
+  - name: Kortrijk
+    image: kortrijk.png
+    url: https://www.kortrijk.be/
+  - name: BBDO
+    image: BBDO.svg
+    url: https://www.bbdo.be/
+  - name: Mercedes
+    image: mercedes.svg
+    url: https://mbcc.be/nlbe/home
+  - name: Chocomel
+    image: chocomel.png
+    url: https://www.chocomel.nl/
+  - name: Proximus
+    image: proximus.png
+    url: https://www.proximus.be/
+  - name: Scansource
+    image: scansource.png
+    url: https://www.scansource.com/en
+  - name: Pepsi
+    image: pepsi.svg
+    url: https://pepsi.be/
+  - name: Volvo
+    image: volvo.svg
+    url: https://www.volvocars.com/
+  - name: Ing Bank
+    image: ing.svg
+    url: https://www.ing.be/en/retail
+  - name: Schweppes
+    image: schweppes.png
+    url: https://schweppes.be/
+  - name: The Manifest
+    image: the-manifest.png
+    url: https://the-manifest.be/

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import React from "react"
-import siteData from "../../content/site.yml"
+import data from "../../content/clients.yml"
 import Client from "./core/Client"
 
 const ClientsStyled = styled.div`
@@ -14,7 +14,7 @@ const Clients = () => (
   <>
     <div id="clients"></div>
     <ClientsStyled>
-      {siteData.clients.map(client => (
+      {data.clients.map(client => (
         <Client key={`client_${client.name}`} client={client} />
       ))}
     </ClientsStyled>

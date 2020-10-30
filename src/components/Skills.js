@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import React from "react"
-import siteData from "../../content/site.yml"
+import data from "../../content/skills.yml"
 import { MainSkill, Skill } from "./core/Skill"
 import uniqolor from "uniqolor"
 
@@ -18,7 +18,7 @@ const Skills = () => (
   <>
     <div id="skills"></div>
     <SkillsStyled>
-      {siteData.skills.map(mainSkill => {
+      {data.skills.map(mainSkill => {
         const color = uniqolor.random({
           saturation: [60, 80],
           lightness: [50, 60],

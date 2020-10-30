@@ -1,0 +1,62 @@
+skills:
+  - Html:
+      - Accessibility
+      - Semantics
+      - Usability
+      - SEO optimisation
+      - Progressive
+  - Css:
+      - Styled Components
+      - Atomic Design
+      - JSS
+      - Css Grid
+  - Javascript:
+      - ES2016+
+      - ReactJs
+      - NodeJs
+      - Jest
+      - Typescript
+      - VueJs
+      - SvelteJs
+      - React Native
+  - Libraries:
+      - GatsbyJs
+      - CypressJs
+      - NestJs
+      - NextJs
+      - Framer Motion
+  - Build tools:
+      - Webpack
+      - Npm
+  - GraphQl:
+      - Apollo
+      - Hasura
+  - AWS:
+      - Appsync
+      - CloudWatch
+      - S3
+      - EC2
+      - SNS
+      - DynamoDB
+      - Lambda
+      - API Gateway
+  - Design:
+      - Figma
+      - Sketch
+      - Zeplin
+      - Photoshop
+      - Illustrator
+  - Practices:
+      - Pair & Mob programming
+      - TDD
+      - Clean Code
+      - Functional programming
+      - Clean Architecture
+  - Extra:
+      - Git
+      - Visual Studio Code
+      - (z)Shell
+      - Jam Stack
+      - 2D games
+      - Soft skills
+      - Netlify
