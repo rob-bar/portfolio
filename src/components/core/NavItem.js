@@ -24,7 +24,7 @@ export const NavItemStyled = styled.li`
     }
   }
 
-  button,
+  div,
   a {
     color: black;
     text-decoration: none;
@@ -32,9 +32,7 @@ export const NavItemStyled = styled.li`
     font-family: "exl";
     padding: 0;
     border: 0;
-    appearance: none;
     cursor: pointer;
-    outline: none;
     font-size: 2rem;
     line-height: 1.4;
     color: black;
@@ -80,15 +78,21 @@ const NavItem = ({ nav, ...props }) => (
           </a>
         )}
         {nav && nav.text && nav.url.startsWith("#") && (
-          <button
+          <div
+            role="button"
+            tabIndex={0}
             onClick={() => {
+              navigate(nav.url)
+              scrollTo(nav.url)
+            }}
+            onKeyDown={() => {
               navigate(nav.url)
               scrollTo(nav.url)
             }}
           >
             <span className="NavItemHover">{nav.text}</span>
             <span className="NavItemNormal">{nav.text}</span>
-          </button>
+          </div>
         )}
 
         {nav && nav.icon && (
