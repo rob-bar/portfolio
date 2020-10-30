@@ -12,7 +12,7 @@ export const NavItemStyled = styled.li`
   overflow: hidden;
 
   &.--noHover {
-    button,
+    div,
     a {
       padding: 0;
       appearance: none;

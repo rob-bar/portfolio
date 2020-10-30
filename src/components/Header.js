@@ -32,7 +32,12 @@ export const Header = () => {
       <HeaderStyled>
         <MobileNavStyled>
           <NavItemStyled className="--noHover">
-            <div onClick={toggleFlyout}>
+            <div
+              onClick={toggleFlyout}
+              role="button"
+              tabIndex={0}
+              onKeyDown={toggleFlyout}
+            >
               <span className="NavItemNormal">
                 <i className="far fa-sm fa-ellipsis-h"></i>
               </span>
