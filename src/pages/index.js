@@ -1,11 +1,12 @@
 import React from "react"
 
 import Layout from "../components/layouts/Main"
+import { Header } from "../components/Header"
 import { Me } from "../components/Me"
 import Projects from "../components/Projects"
 import Clients from "../components/Clients"
+import Skills from "../components/Skills"
 import SEO from "../components/seo"
-import { Header } from "../components/Header"
 
 const IndexPage = () => (
   <Layout Header={Header}>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <Me />
     <Projects />
     <Clients />
+    <Skills />
   </Layout>
 )
 

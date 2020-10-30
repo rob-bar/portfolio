@@ -1,9 +1,7 @@
 import React, { useRef } from "react"
 import siteData from "../../content/site.yml"
-import { device } from "../css/mediaQuery"
-import NavItem from "./NavItem"
 import styled from "styled-components"
-import { NavItemStyled } from "./NavItem"
+import NavItem, { NavItemStyled } from "./core/NavItem"
 import { navigate } from "@reach/router"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
@@ -109,7 +107,7 @@ const NavigationStyled = styled.nav`
   height: 3.475rem;
   display: none;
 
-  @media ${device.portrait} {
+  @media (min-width: 722px) {
     display: flex;
   }
 `
@@ -145,7 +143,7 @@ const AllrightsReserved = styled.aside`
   span {
     display: none;
 
-    @media (min-width: 720px) {
+    @media (min-width: 830px) {
       display: inline;
     }
   }
@@ -156,7 +154,7 @@ const MobileNavStyled = styled.ul`
   align-items: stretch;
   list-style-type: none;
 
-  @media ${device.portrait} {
+  @media (min-width: 722px) {
     display: none;
   }
 `
@@ -194,7 +192,7 @@ const MobileNavFlyOut = styled.ul`
     color: black;
   }
 
-  @media ${device.portrait} {
+  @media (min-width: 722px) {
     display: none;
   }
 `
