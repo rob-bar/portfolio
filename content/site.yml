@@ -11,6 +11,65 @@ navsBack:
   - text: back
     url: "/"
 
+skills:
+  - Html
+    - Accessibility
+    - Semantics
+    - Usability
+    - SEO optimisation
+    - Progressive
+  - Css
+    - Styled Components
+    - Atomic Design
+    - JSS
+    - Css Grid
+  - Javascript
+    - ES2016+
+    - ReactJs
+    - Jest
+    - Framer Motion
+    - React Native
+    - NodeJs
+    - NextJs
+    - GatsbyJs
+    - CypressJs
+    - NestJs
+    - VueJs
+    - SvelteJs
+  - Build tools
+    - Webpack
+    - Npm
+  - Typescript
+  - GraphQl
+    - Apollo
+    - Hasura
+  - AWS
+    - Appsync
+    - CloudWatch
+    - S3
+    - EC2
+    - SNS
+    - DynamoDB
+    - Lambda
+    - API Gateway
+  - Design
+    - Figma
+    - Sketch
+    - Zeplin
+    - Photoshop
+    - Illustrator
+  - Extra
+    - Git
+    - Pair & Mob programming
+    - TDD
+    - Clean Code
+    - Functional programming
+    - Clean Architecture
+    - Visual Studio Code
+    - Jam Stack
+    - 2D games
+    - Design paterns
+
 socials:
   - active: true
     icon: linkedin-in

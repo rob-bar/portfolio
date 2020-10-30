@@ -1,14 +1,14 @@
 import React from "react"
-// import { Link } from "gatsby"
 
-import Layout from "../components/layouts/layout"
+import Layout from "../components/layouts/Main"
 import { Me } from "../components/Me"
 import Projects from "../components/Projects"
 import Clients from "../components/Clients"
 import SEO from "../components/seo"
+import { Header } from "../components/Header"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout Header={Header}>
     <SEO title="Home" />
     <Me />
     <Projects />

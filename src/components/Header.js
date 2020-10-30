@@ -1,15 +1,13 @@
-// import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useRef } from "react"
 import siteData from "../../content/site.yml"
-import { device } from "./mediaQuery"
+import { device } from "../css/mediaQuery"
 import NavItem from "./NavItem"
 import styled from "styled-components"
 import { NavItemStyled } from "./NavItem"
 import { navigate } from "@reach/router"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
-const Header = ({ siteTitle }) => {
+export const Header = () => {
   const flyOutRef = useRef(null)
 
   const toggleFlyout = e => {
@@ -64,6 +62,31 @@ const Header = ({ siteTitle }) => {
   )
 }
 
+export const HeaderNotFound = () => {
+  return (
+    <React.Fragment>
+      <HeaderStyled>
+        <ErrorNavigationStyled>
+          <NavigationItemsStyled>
+            {siteData.navsBack.map((nav, i) => (
+              <NavItem key={`nav${i}`} nav={nav} />
+            ))}
+          </NavigationItemsStyled>
+        </ErrorNavigationStyled>
+        <AllrightsReserved>
+          {`${new Date().getFullYear()} © `}
+          <span>All rights reserved</span>
+        </AllrightsReserved>
+        <SocialItemsStyled>
+          {siteData.socials.map((nav, i) => (
+            <NavItem key={`nav${i}`} nav={nav} />
+          ))}
+        </SocialItemsStyled>
+      </HeaderStyled>
+    </React.Fragment>
+  )
+}
+
 const HeaderStyled = styled.header`
   width: 100%;
   padding: 0 0.5rem;
@@ -90,19 +113,24 @@ const NavigationStyled = styled.nav`
     display: flex;
   }
 `
-
+const ErrorNavigationStyled = styled.nav`
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  height: 3.475rem;
+  display: flex;
+`
 const NavigationItemsStyled = styled.ul`
   display: flex;
   align-items: stretch;
   list-style-type: none;
 `
-
 const SocialItemsStyled = styled.ul`
   display: flex;
   height: 100%;
   list-style-type: none;
 `
-
 const AllrightsReserved = styled.aside`
   font-family: "osl";
   font-size: 0.8125rem;
@@ -122,7 +150,6 @@ const AllrightsReserved = styled.aside`
     }
   }
 `
-
 const MobileNavStyled = styled.ul`
   display: flex;
   height: 100%;
@@ -133,7 +160,6 @@ const MobileNavStyled = styled.ul`
     display: none;
   }
 `
-
 const MobileNavFlyOut = styled.ul`
   display: block;
   position: fixed;
@@ -172,13 +198,3 @@ const MobileNavFlyOut = styled.ul`
     display: none;
   }
 `
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

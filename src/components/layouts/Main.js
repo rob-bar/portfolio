@@ -1,11 +1,7 @@
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import Header from "../Header"
-import HeaderNotFound from "../HeaderNotFound"
-import "./layout.css"
-import "./fontAwesome.css"
+import "../../css/layout.css"
+import "../../css/fontAwesome.css"
 
 const FixedBackground = styled.div`
   position: fixed;
@@ -37,33 +33,14 @@ const MainStyled = styled.main`
     width: 1600px;
   }
 `
-const Layout = ({ children, isErrorPage = false }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+const Layout = ({ children, Header }) => {
   return (
     <>
       <FixedBackground />
-      {isErrorPage ? (
-        <HeaderNotFound siteTitle={data.site.siteMetadata.title} />
-      ) : (
-        <Header siteTitle={data.site.siteMetadata.title} />
-      )}
-
+      <Header />
       <MainStyled>{children}</MainStyled>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

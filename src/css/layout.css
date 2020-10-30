@@ -21,79 +21,73 @@ body {
 
 @font-face {
   font-family: "chunk5";
-  src: url("../../../static/fonts/chunkfive.eot?1390329945");
-  src: url("../../../static/fonts/chunkfive.eot?&1390329945#iefix")
+  src: url("../../static/fonts/chunkfive.eot?1390329945");
+  src: url("../../static/fonts/chunkfive.eot?&1390329945#iefix")
       format("embedded-opentype"),
-    url("../../../static/fonts/chunkfive.woff?1390329945") format("woff"),
-    url("../../../static/fonts/chunkfive.ttf?1390329945") format("truetype"),
-    url("../../../static/fonts/chunkfive.svg?1390329945") format("svg");
+    url("../../static/fonts/chunkfive.woff?1390329945") format("woff"),
+    url("../../static/fonts/chunkfive.ttf?1390329945") format("truetype"),
+    url("../../static/fonts/chunkfive.svg?1390329945") format("svg");
 }
 @font-face {
   font-family: "exl";
-  src: url("../../../static/fonts/existence-light.eot?1390329945");
-  src: url("../../../static/fonts/existence-light.eot?&1390329945#iefix")
+  src: url("../../static/fonts/existence-light.eot?1390329945");
+  src: url("../../static/fonts/existence-light.eot?&1390329945#iefix")
       format("embedded-opentype"),
-    url("../../../static/fonts/existence-light.woff?1390329945") format("woff"),
-    url("../../../static/fonts/existence-light.ttf?1390329945")
-      format("truetype"),
-    url("../../../static/fonts/existence-light.svg?1390329945") format("svg");
+    url("../../static/fonts/existence-light.woff?1390329945") format("woff"),
+    url("../../static/fonts/existence-light.ttf?1390329945") format("truetype"),
+    url("../../static/fonts/existence-light.svg?1390329945") format("svg");
 }
 @font-face {
   font-family: "osb";
-  src: url("../../../static/fonts/OpenSans-Bold.eot?1390329945");
-  src: url("../../../static/fonts/OpenSans-Bold.eot?&1390329945#iefix")
+  src: url("../../static/fonts/OpenSans-Bold.eot?1390329945");
+  src: url("../../static/fonts/OpenSans-Bold.eot?&1390329945#iefix")
       format("embedded-opentype"),
-    url("../../../static/fonts/OpenSans-Bold.woff?1390329945") format("woff"),
-    url("../../../static/fonts/OpenSans-Bold.ttf?1390329945") format("truetype"),
-    url("../../../static/fonts/OpenSans-Bold.svg?1390329945") format("svg");
+    url("../../static/fonts/OpenSans-Bold.woff?1390329945") format("woff"),
+    url("../../static/fonts/OpenSans-Bold.ttf?1390329945") format("truetype"),
+    url("../../static/fonts/OpenSans-Bold.svg?1390329945") format("svg");
 }
 @font-face {
   font-family: "osl";
-  src: url("../../../static/fonts/OpenSans-Light.eot?1390329945");
-  src: url("../../../static/fonts/OpenSans-Light.eot?&1390329945#iefix")
+  src: url("../../static/fonts/OpenSans-Light.eot?1390329945");
+  src: url("../../static/fonts/OpenSans-Light.eot?&1390329945#iefix")
       format("embedded-opentype"),
-    url("../../../static/fonts/OpenSans-Light.woff?1390329945") format("woff"),
-    url("../../../static/fonts/OpenSans-Light.ttf?1390329945")
-      format("truetype"),
-    url("../../../static/fonts/OpenSans-Light.svg?1390329945") format("svg");
+    url("../../static/fonts/OpenSans-Light.woff?1390329945") format("woff"),
+    url("../../static/fonts/OpenSans-Light.ttf?1390329945") format("truetype"),
+    url("../../static/fonts/OpenSans-Light.svg?1390329945") format("svg");
 }
 @font-face {
   font-family: "fut";
-  src: url("../../../static/fonts/FuturaStd-CondensedLight.eot?1390329945");
-  src: url("../../../static/fonts/FuturaStd-CondensedLight.eot?&1390329945#iefix")
+  src: url("../../static/fonts/FuturaStd-CondensedLight.eot?1390329945");
+  src: url("../../static/fonts/FuturaStd-CondensedLight.eot?&1390329945#iefix")
       format("embedded-opentype"),
-    url("../../../static/fonts/FuturaStd-CondensedLight.woff?1390329945")
+    url("../../static/fonts/FuturaStd-CondensedLight.woff?1390329945")
       format("woff"),
-    url("../../../static/fonts/FuturaStd-CondensedLight.ttf?1390329945")
+    url("../../static/fonts/FuturaStd-CondensedLight.ttf?1390329945")
       format("truetype"),
-    url("../../../static/fonts/FuturaStd-CondensedLight.otf?1390329945")
+    url("../../static/fonts/FuturaStd-CondensedLight.otf?1390329945")
       format("opentype"),
-    url("../../../static/fonts/FuturaStd-CondensedLight.svg?1390329945")
+    url("../../static/fonts/FuturaStd-CondensedLight.svg?1390329945")
       format("svg");
 }
 @font-face {
   font-family: "futl";
-  src: url("../../../static/fonts/FuturaStd-Light.eot?1398428054");
-  src: url("../../../static/fonts/FuturaStd-Light.eot?&1398428054#iefix")
+  src: url("../../static/fonts/FuturaStd-Light.eot?1398428054");
+  src: url("../../static/fonts/FuturaStd-Light.eot?&1398428054#iefix")
       format("embedded-opentype"),
-    url("../../../static/fonts/FuturaStd-Light.woff?1398428054") format("woff"),
-    url("../../../static/fonts/FuturaStd-Light.ttf?1398428054")
-      format("truetype"),
-    url("../../../static/fonts/FuturaStd-Light.otf?1398428052")
-      format("opentype"),
-    url("../../../static/fonts/FuturaStd-Light.svg?1398428054") format("svg");
+    url("../../static/fonts/FuturaStd-Light.woff?1398428054") format("woff"),
+    url("../../static/fonts/FuturaStd-Light.ttf?1398428054") format("truetype"),
+    url("../../static/fonts/FuturaStd-Light.otf?1398428052") format("opentype"),
+    url("../../static/fonts/FuturaStd-Light.svg?1398428054") format("svg");
 }
 @font-face {
   font-family: "futh";
-  src: url("../../../static/fonts/FuturaStd-Heavy.eot?1411913860");
-  src: url("../../../static/fonts/FuturaStd-Heavy.eot?&1411913860#iefix")
+  src: url("../../static/fonts/FuturaStd-Heavy.eot?1411913860");
+  src: url("../../static/fonts/FuturaStd-Heavy.eot?&1411913860#iefix")
       format("embedded-opentype"),
-    url("../../../static/fonts/FuturaStd-Heavy.woff?1411913860") format("woff"),
-    url("../../../static/fonts/FuturaStd-Heavy.ttf?1411913860")
-      format("truetype"),
-    url("../../../static/fonts/FuturaStd-Heavy.otf?1411913860")
-      format("opentype"),
-    url("../../../static/fonts/FuturaStd-Heavy.svg?1411913860") format("svg");
+    url("../../static/fonts/FuturaStd-Heavy.woff?1411913860") format("woff"),
+    url("../../static/fonts/FuturaStd-Heavy.ttf?1411913860") format("truetype"),
+    url("../../static/fonts/FuturaStd-Heavy.otf?1411913860") format("opentype"),
+    url("../../static/fonts/FuturaStd-Heavy.svg?1411913860") format("svg");
 }
 
 article,
