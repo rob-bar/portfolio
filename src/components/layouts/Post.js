@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import "../../css/layout.css"
 import "../../css/fontAwesome.css"
-import { Header } from "../Header"
+import { HeaderNotFound } from "../Header"
 
 const FixedBackground = styled.div`
   position: fixed;
@@ -35,11 +35,11 @@ const MainStyled = styled.main`
   }
 `
 
-export const Layout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <FixedBackground />
-      <Header />
+      <HeaderNotFound />
       <MainStyled>{children}</MainStyled>
     </>
   )

@@ -6,7 +6,7 @@ import { Me } from "../components/Me"
 import Projects from "../components/Projects"
 import Clients from "../components/Clients"
 import Skills from "../components/Skills"
-import Posts from "../components/Posts"
+// import Posts from "../components/Posts"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -16,7 +16,7 @@ const IndexPage = () => (
     <Projects />
     <Clients />
     <Skills />
-    <Posts />
+    {/* <Posts /> */}
   </Layout>
 )
 

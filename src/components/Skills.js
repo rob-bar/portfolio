@@ -6,7 +6,7 @@ import uniqolor from "uniqolor"
 
 const SkillsStyled = styled.div`
   display: block;
-  margin-bottom: 4.0625rem;
+  /* margin-bottom: 4.0625rem; */
 `
 
 const SkillRow = styled.div`

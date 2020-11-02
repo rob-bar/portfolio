@@ -1,4 +1,23 @@
 projects:
+  - title: Short Fuse
+    slug: /short-fuse
+    client: "ShortFuse"
+    type: Website
+    description: ""
+    active: true
+    tags:
+      - React
+      - Gatsby
+      - Styled Components
+    media:
+      thumb: "short-fuse.jpg"
+      big": "short-fuse.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2020-11-02T22:00:00.000Z"
+    likes: 0
+    live_url: https://shortfuse.be/
   - title: VTMBeleving
     slug: /vtm-beleving
     client: "DPGMedia"
@@ -21,7 +40,7 @@ projects:
       preview: ""
       videos: ""
       pictures: ""
-    launch_date: "2016-09-22T22:00:00.000Z"
+    launch_date: "2020-09-22T22:00:00.000Z"
     likes: 0
     live_url: https://vtm.be/
   - title: Eventplanner

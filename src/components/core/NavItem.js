@@ -30,6 +30,7 @@ export const NavItemStyled = styled.li`
     text-decoration: none;
     text-transform: uppercase;
     font-family: "exl";
+    outline: 0;
     padding: 0;
     border: 0;
     cursor: pointer;
