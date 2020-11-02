@@ -82,13 +82,15 @@ const NavItem = ({ nav, ...props }) => (
           <div
             role="button"
             tabIndex={0}
-            onClick={() => {
-              navigate(nav.url)
+            onClick={e => {
+              e.preventDefault()
               scrollTo(nav.url)
+              navigate(nav.url)
             }}
-            onKeyDown={() => {
-              navigate(nav.url)
+            onKeyDown={e => {
+              e.preventDefault()
               scrollTo(nav.url)
+              navigate(nav.url)
             }}
           >
             <span className="NavItemHover">{nav.text}</span>

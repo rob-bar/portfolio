@@ -7,14 +7,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     { resolve: `gatsby-plugin-styled-components` },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          default: require.resolve("./src/components/layouts/Post.js"),
-        },
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     defaultLayouts: {
+    //       default: require.resolve("./src/components/layouts/Post.js"),
+    //     },
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -41,7 +41,7 @@ module.exports = {
         icon: `static/images/icon/fav.png`,
       },
     },
-    `gatsby-transformer-sharp`,
+    // `gatsby-transformer-sharp`,
     `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-gtag`,

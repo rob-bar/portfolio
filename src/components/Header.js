@@ -18,9 +18,10 @@ export const Header = () => {
         {siteData.navs.map((nav, i) => (
           <li key={`li${i}`}>
             <button
-              onClick={() => {
-                navigate(nav.url)
+              onClick={e => {
+                e.preventDefault()
                 scrollTo(nav.url)
+                navigate(nav.url)
                 toggleFlyout()
               }}
             >
