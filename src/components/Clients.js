@@ -8,6 +8,13 @@ const ClientsStyled = styled.div`
   grid-template-columns: repeat(auto-fit, 150px);
   grid-gap: 0.625rem;
   margin-bottom: 4.0625rem;
+  transition: filter 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+  &:hover {
+    .client {
+      filter: grayscale(100%);
+    }
+  }
 `
 
 const Clients = () => (
