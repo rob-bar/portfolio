@@ -1,4 +1,30 @@
 projects:
+  - title: One Happy Hound
+    slug: /one-happy-hound
+    client: "OneHappyHound"
+    type: Website
+    description: |
+      A static rendered site made with Gatsby js & react as a revamp of an old wix website full of bugs. 
+      The performance was poor, seo was poor and the client had issues with the design studio of Wix. 
+      On top of the static performance we made sure the content was still manageable width a cms, we went for Sanity.io
+    active: true
+    tags:
+      - React
+      - Gatsby
+      - Styled Components
+      - Sanity.io
+      - Googlemaps
+      - SEO
+      - Graphql
+    media:
+      thumb: "one-happy.jpg"
+      big": "one-happy.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2020-11-30T22:00:00.000Z"
+    likes: 0
+    live_url: https://onehappyhound.be/
   - title: Short Fuse
     slug: /short-fuse
     client: "ShortFuse"
