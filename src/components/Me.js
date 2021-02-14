@@ -19,7 +19,7 @@ export const Me = () => {
                 <div className="arrow">
                   <div className="angle"></div>
                 </div>
-                <h1>Robbie Bardijn</h1>
+                <h2>Hi, need a new website?</h2>
                 <p>
                   <a
                     href="mailto:robbie.bardijn.works@gmail.com"
@@ -29,6 +29,7 @@ export const Me = () => {
                   </a>
                 </p>
                 <p>
+                  or...{" "}
                   <a href="tel: 0032472798863" className="tel">
                     0472 / 79.88.63
                   </a>
@@ -349,8 +350,20 @@ const MeStyled = styled.div`
         line-height: 1em;
       }
 
+      h2 {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-family: "chunk5";
+        font-size: 1.4rem;
+        color: black;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1em;
+      }
+
       p {
-        margin: 0.3rem 0;
+        margin: 0;
+        margin-bottom: 0.125rem;
         font-family: "osl";
         font-size: 20px;
         color: black;
