@@ -1,4 +1,31 @@
 projects:
+  - title: Tim Studio v5
+    slug: /tim-studio-v5
+    client: "Tangent Works"
+    type: Application
+    description: |
+      A complete rework and rethink of Tim Studio of Tangent works. 
+      The client asked for a more visually attractive application. 
+      This was a huge task and a nice opportunity for me to sharpen my UX skills, together along with an amazing team. 
+      I got to work on a more technical application with large datasets and lots of mathematical complex calculations.
+    active: true
+    tags:
+      - React
+      - GraphQl
+      - Styled Components
+      - Apollo
+      - Julia / Python
+      - Functional programming
+      - TDD
+    media:
+      thumb: "tim-studio.jpg"
+      big": "tim-studio.jpg"
+      preview: ""
+      videos: ""
+      pictures: ""
+    launch_date: "2021-06-14T11:23:07.000Z"
+    likes: 0
+    live_url: https://tim-platform.tangent.works/
   - title: One Happy Hound
     slug: /one-happy-hound
     client: "OneHappyHound"
