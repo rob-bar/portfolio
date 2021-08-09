@@ -301,28 +301,6 @@ projects:
       pictures: ""
     launch_date: "2013-12-11T23:00:00.000Z"
     likes: 0
-  - title: Wonen Vlaanderen
-    slug: /wonen-vlaanderen
-    client: "One Agency"
-    type: Website
-    description: ""
-    active: true
-    tags:
-      - pug
-      - Sass
-      - Html
-      - full rebranding
-      - gulp
-      - Sass
-    media:
-      thumb: "wonen-vlaanderen.jpg"
-      big": "wonen-vlaanderen.jpg"
-      preview: ""
-      videos: ""
-      pictures: ""
-    launch_date: "2013-03-05T22:00:00.000Z"
-    likes: 0
-    live_url: https://wonenvlaanderen.be/
   - title: Polygone Newyear
     client: ""
     type: SPA
