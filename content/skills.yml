@@ -28,6 +28,9 @@ skills:
   - Build tools:
       - Webpack
       - Npm
+      - Parcel
+      - Snowpack
+      - pnpm
   - GraphQl:
       - Apollo
       - Hasura
