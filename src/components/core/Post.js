@@ -28,12 +28,10 @@ const Date = styled.div`
 `
 
 const DayAndMonth = styled.small`
-  font-family: "futh";
   flex-shrink: 0;
 `
 
 const Year = styled.small`
-  font-family: "fut";
   font-size: 1.65rem;
   flex-shrink: 0;
 `

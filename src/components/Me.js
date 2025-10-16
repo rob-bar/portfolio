@@ -371,7 +371,6 @@ const MeStyled = styled.div`
         font-style: normal;
 
         a {
-          font-family: "futl";
           font-size: 21px;
           color: black;
           font-weight: normal;
