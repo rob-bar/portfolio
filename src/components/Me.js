@@ -44,19 +44,8 @@ export const Me = () => {
               </div>
             </div>
 
-            <div className="pic shade">
+            <div className="pic shade" onMouseEnter={turnBalloon} onMouseLeave={turnBalloon}>
               <img src={`/images/me.jpg`} alt="Robbie Bardijn" />
-            </div>
-
-            <div className="cv shade">
-              <a
-                href="/downloads/cv-robbie-bardijn.pdf"
-                target="_blank"
-                onMouseEnter={turnBalloon}
-                onMouseLeave={turnBalloon}
-              >
-                <span className="linkicon fal fa-link"></span>
-              </a>
             </div>
           </div>
         </div>

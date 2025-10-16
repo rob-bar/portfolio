@@ -193,7 +193,7 @@ const MobileNavFlyOut = styled.ul`
     padding: 0;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "exl";
+    
     font-size: 2rem;
     color: black;
   }
